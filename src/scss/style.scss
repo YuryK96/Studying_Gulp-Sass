@@ -1,0 +1,21 @@
+@import 'fonts';
+body {
+    background-color: #000;
+    span {
+        color: red;
+        font-family: Roboto;
+        font-weight: 700;
+    }
+    background: url('@img/sample.jpg') 0 0 no-repeat;
+}
+
+@media (max-width: 767px) {
+    span {
+        font-size: 20px;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        background: green($color: #000000);
+    }
+}
