@@ -1,21 +1,17 @@
-@import 'fonts';
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap");
+
+@import "fonts";
+@import "header";
+@import "mainTitle";
+
 body {
-    background-color: #000;
-    span {
-        color: red;
-        font-family: Roboto;
-        font-weight: 700;
-    }
-    background: url('@img/sample.jpg') 0 0 no-repeat;
+  margin: 0;
 }
 
-@media (max-width: 767px) {
-    span {
-        font-size: 20px;
-    }
-}
-@media (max-width: 767px) {
-    body {
-        background: green($color: #000000);
-    }
+a {
+  text-decoration: none;
 }

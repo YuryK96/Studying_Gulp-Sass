@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  width: 100vw;
+}
+
+.nav-logo {
+  display: flex;
+  margin: 0 250px 0;
+  align-items: center;
+
+  &__text {
+    text-align: center;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+    margin-left: 18px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  padding: 45px 0 45px 30%;
+  &__link {
+    margin-left: 34px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    a {
+      color: #404040;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .nav-bar {
+    display: flex;
+    padding: 45px 0 45px 15%;
+  }
+}
