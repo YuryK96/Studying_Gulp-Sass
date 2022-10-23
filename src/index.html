@@ -3,7 +3,11 @@
   @@include('html/head.html',{"title":"MINIMAL"})
   <body>
     @@include('html/header.html',{})
-    <main>@@include('html/mainTitle.html',{})</main>
+    <main>
+      @@include('html/mainTitle.html',{}) @@include('html/howWeMake.html',{})
+      @@include('html/projects.html',{}) @@include('html/team.html',{})
+      @@include('html/reviews.html',{}) @@include('html/lets.html',{})
+    </main>
     @@include('html/footer.html',{})
     <script src="js/app.min.js"></script>
   </body>

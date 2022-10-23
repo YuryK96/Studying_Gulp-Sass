@@ -1,0 +1,52 @@
+.lets {
+  background: url("../img/lets.svg");
+  background-size: cover;
+  padding-bottom: 35px;
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__subtitle,
+  &__mail,
+  &__adress,
+  &__descr {
+    padding-top: 20px;
+    @include descr;
+
+    color: #212121;
+  }
+  &__img {
+    height: 60px;
+    margin-bottom: 10px;
+    img {
+      height: 100%;
+    }
+  }
+
+  &__subtitle {
+    @include subtitle;
+  }
+
+  &__item {
+    width: 195px;
+    padding: 0 40px;
+    height: 300px;
+  }
+  &__container-social {
+    padding-top: 10px;
+    width: 50%;
+    margin: auto;
+  }
+  &__item-social {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 15px;
+  }
+
+  &__social-name {
+    padding-left: 5px;
+  }
+}

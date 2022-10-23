@@ -1,11 +1,13 @@
 .nav {
   display: flex;
-  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+  height: 105px;
 }
 
 .nav-logo {
   display: flex;
-  margin: 0 250px 0;
   align-items: center;
 
   &__text {
@@ -23,25 +25,13 @@
 
 .nav-bar {
   display: flex;
-  padding: 45px 0 45px 30%;
   &__link {
+    @include subtitle;
     margin-left: 34px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 20px;
-    text-transform: uppercase;
 
     a {
       color: #404040;
     }
-  }
-}
-
-@media (max-width: 1300px) {
-  .nav-bar {
-    display: flex;
-    padding: 45px 0 45px 15%;
   }
 }

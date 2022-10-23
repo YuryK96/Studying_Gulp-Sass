@@ -1,0 +1,20 @@
+.projects {
+  background: #f5f5f5;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 960px;
+    height: 1200px;
+    margin: auto;
+  }
+
+  &__subtitle {
+    @include subtitle;
+    padding-top: 19px;
+  }
+  &__descr {
+    @include descr;
+    padding-top: 4px;
+  }
+}

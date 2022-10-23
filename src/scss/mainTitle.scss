@@ -7,13 +7,9 @@
 
   &__text {
     left: calc(50% - 672px / 2);
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
+    @include subtitle;
     font-size: 44px;
     line-height: 55px;
-    text-align: center;
-    text-transform: uppercase;
     color: #ffffff;
   }
   &__text::after {
@@ -25,20 +21,13 @@
   }
 
   &__detail {
-    font-family: "Vollkorn";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-
-    text-align: center;
-
+    @include descr;
     color: rgba(255, 255, 255, 0.81);
   }
 
   &__cross {
     width: 50px;
-    margin: 285px auto 0;
+    margin: 286.5px auto 0;
   }
 }
 
@@ -47,38 +36,17 @@
   background: #fefec9;
 
   &__descr {
+    @include descr;
     padding-top: 60px;
-    font-family: "Vollkorn";
-    font-style: normal;
-    font-weight: 400;
     margin: auto;
     width: 800px;
-    font-size: 18px;
-    line-height: 25px;
     text-align: center;
-    color: #47474f;
+    font-size: 18px;
+    color: $grey;
+    line-height: 25px;
   }
 
   &__button {
     margin-top: 53px;
-  }
-}
-
-.button {
-  width: 66px;
-  border: 1px solid black;
-  border-radius: 5px;
-  margin: auto;
-  width: 100px;
-  padding: 10px;
-
-  &__text {
-    font-family: "Vollkorn";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #47474f;
   }
 }

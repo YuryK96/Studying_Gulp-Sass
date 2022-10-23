@@ -4,14 +4,74 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap");
 
+$grey: #47474f;
+
+@mixin subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@mixin descr {
+  font-family: "Vollkorn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+}
+.button {
+  width: 66px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: auto;
+  width: 100px;
+  padding: 10px;
+
+  &__text {
+    @include descr;
+    font-size: 16px;
+    color: $grey;
+  }
+}
+
 @import "fonts";
 @import "header";
 @import "mainTitle";
+@import "howWeMake";
+@import "projects";
+@import "team";
+@import "reviews";
+@import "lets";
+@import "footer";
 
 body {
   margin: 0;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 79px 0 20px 0;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  margin: 28px auto 25px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.09);
 }

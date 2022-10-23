@@ -1,0 +1,79 @@
+.footer {
+  background: black;
+  padding-bottom: 75px;
+
+  &__form {
+    padding: 70px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__form .form {
+    padding-bottom: 25px;
+  }
+
+  &__descr {
+    @include descr;
+    padding-top: 15px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__name,
+  &__mail,
+  &__budget {
+    width: 570px;
+    height: 40px;
+    font-size: 17px;
+    border: none;
+    color: white;
+  }
+  &__name,
+  &__budget {
+    background: rgba(255, 255, 255, 0.18);
+  }
+  &__descr,
+  &__mail {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  &__descr {
+    width: 570px;
+    height: 130px;
+    border: none;
+    color: white;
+    font-size: 17px;
+  }
+
+  &__name::placeholder,
+  &__mail::placeholder,
+  &__budget::placeholder,
+  &__descr::placeholder {
+    @include descr;
+    color: white;
+    text-align: start;
+    font-style: italic;
+    font-size: 17px;
+    padding: 20px 0 0 30px;
+  }
+}
+
+.button {
+  &_border {
+    border: 1px solid #7ec4bd;
+  }
+  &__text_color {
+    color: #7ec4bd;
+  }
+  &_size {
+    width: 190px;
+    padding: 15px;
+  }
+  &__text_italic {
+    font-style: italic;
+  }
+}
